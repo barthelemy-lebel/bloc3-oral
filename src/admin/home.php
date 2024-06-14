@@ -23,7 +23,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/src/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
   <div class="container mx-auto p-4">
@@ -31,8 +31,9 @@
       <h1 class="text-2xl font-bold text-gray-700">Bienvenue <?php echo $_SESSION['username']; ?>!</h1>
       <p class="mt-2 text-gray-600">C'est votre espace admin.</p>
       <div class="mt-4 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4">
+        <a href="home.php" class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-700 transition">Accueil</a>
         <a href="add_submissions.php" class="px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-700 transition">Ajouter une annonce</a>
-        <a href="modify_user.php" class="px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-700 transition">Modifier une annonce</a>
+        <a href="modify_submissions.php" class="px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-700 transition">Modifier une annonce</a>
         <a href="#" class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 transition">Supprimer une annonce</a>
         <a href="../logout.php" class="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-700 transition">Déconnexion</a>
       </div>
