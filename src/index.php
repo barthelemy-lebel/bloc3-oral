@@ -27,7 +27,7 @@
     <div class="sucess">
       <div class="flex flex-row align-bottom justify-start flex-wrap gap-4">
         <h1 class="text-3xl" >Bienvenue <span class="text-purple-500"><?php echo $_SESSION['username']; ?></span>!</h1>
-        <a href="../logout.php" class=" px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-700 transition">Déconnexion</a>
+        <a href="logout.php" class=" px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-700 transition">Déconnexion</a>
       </div>
       <div class="bg-white rounded-lg shadow-md p-6 mt-6">
         <h2 class="text-xl font-bold text-gray-700 mb-4">Toutes les annonces</h2>
